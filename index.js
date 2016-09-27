@@ -2,12 +2,14 @@ var express = require("express");
 var app = express();
 
 app.get ( "/",function (req,res){
-	res.send("hello cheng!")
+	var page = "<html>" + "<body>" + "<h1>index.html</h1>" +"</body>" +"</html>"
+	res.send(page)
 	console.log("hello cheng")
 })
 
-app.get ( "/abc",function (req,res){
-	res.send("hehe cheng!")
+app.get ( "/about",function (req,res){
+	var page = "<html>" + "<body>" + "<h1>about.html</h1>" +"</body>" +"</html>"
+	res.send(page)
 	console.log("hehe cheng")
 })
 
